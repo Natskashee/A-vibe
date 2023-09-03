@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Inconsolata&family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: 'Ettlora';
+    src: url('ettlora/Ettlora.ttf');
+}
+
+.title{
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.title-text {
+    font-family: 'Ettlora';
+}
+
+body{
+    background-color: #4F0205;
+}
+
+
+.swiper {
+    width: 440px;
+    height: 520px;
+}
+
+@media (max-width: 768px) {
+    .swiper {
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper {
+        width: 220px;
+        height: 300px;
+    }
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#player03 {
+    grid-area: C;
+  }
+  
+  #player03 .controls {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .player {
+    background-color: #4F0205;
+    padding: 28px;
+    border-radius: 20px;
+  }
+  
+  .player img {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 9999px;
+  }
+
+  #played-song {
+    animation: rotate 6s ease-in-out infinite;
+  }
+
+  @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+  
+  .info {
+   color: #E1E1E6;
+  }
+  
+  .info p {
+    opacity: 0.68;
+    font-size: 19px;
+  }
+  
+  .info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .player h1 {
+    font-size: 27px;
+    color: #E1E1E6;
+    padding-bottom: 7px;
+  }
+  
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  
+  .track {
+    padding-top: 28px;
+   position: relative;
+  
+  }
+  
+  .track::before {
+  content: '';
+  height: 6px;
+  width: 100%;
+  display: block;
+  background: #D9D9D9;
+  opacity: 0.3;
+  border-radius: 10px;
+  position: absolute;
+  }
+  
+  .track::after { 
+    content: '';
+  height: 6px;
+  width: 85%;
+  display: block;
+  background: #D9D9D9;
+  border-radius: 10px;
+  
+  
+  }
+  
+  .time {
+    opacity: 0.7;
+    font-size: 14px;
+    color: gainsboro;
+  
+    display: flex;
+    justify-content: space-between;
+    padding-top: 9.6px;
+  }
